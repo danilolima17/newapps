@@ -1,4 +1,9 @@
-const withOffline = require('next-offline');
+const withPWA = require('next-pwa')({
+  dest: 'public'
+})
 
-module.exports = withOffline(); 
-
+module.exports = withPWA({
+  // next.js config
+  register: 'true',
+  sw: 'service-worker.js'
+})
