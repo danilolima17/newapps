@@ -1,0 +1,61 @@
+.Button {
+  border: none;
+}
+
+.Button svg {
+  filter: invert(1);
+}
+
+.Checkbox {
+  border: 1px solid var(--white);
+  border-radius: 4px;
+}
+
+.Checkbox svg {
+  stroke: #aaa;
+}
+
+.List h4,
+.List .Checkbox {
+  transition: all 0.3s linear;
+}
+
+.TextIsChecked {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.IsChecked .Checkbox {
+  border-color: #aaaaaa30;
+}
+
+.IsChecked .Checkbox svg {
+  stroke: #aaa;
+}
+
+.Header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 1rem 1rem 0;
+  animation: slide 0.5s ease-in-out forwards;
+}
+
+.Actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 7px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100vh);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

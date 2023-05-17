@@ -1,0 +1,68 @@
+.Wrapper {
+  width: 100%;
+  min-height: 8vh;
+
+  position: relative;
+
+  border-right: 5px solid var(--blue);
+  border-radius: 9px;
+
+  background-color: var(--gray-dark);
+
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+
+  word-break: break-all;
+  transition: border 0.2s linear;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 1rem;
+
+  animation: slide 0.5s ease-in-out forwards;
+}
+
+.Wrapper button {
+  background: none;
+  cursor: pointer;
+
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.Wrapper button svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.Wrapper:hover {
+  border-right-width: 10px;
+}
+
+.Wrapper a {
+  word-wrap: break-word;
+  font: 600 1.3rem var(--font-family);
+}
+
+.Wrapper a span {
+  font: 600 1rem var(--font-family);
+}
+
+.Wrapperimg {
+  filter: invert(1);
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-90vh);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

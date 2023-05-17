@@ -1,0 +1,19 @@
+.Wrapper {
+  width: 95%;
+  height: 0.3rem;
+
+  background-color: #ddd;
+  border-radius: 5px;
+
+  margin-top: 1rem;
+
+  position: absolute;
+  bottom: 1px;
+  left: 2.5%;
+}
+
+.Wrapper div {
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(85deg, #c3423f, #9bc53d, #5bc0eb);
+}
