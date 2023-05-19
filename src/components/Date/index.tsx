@@ -10,7 +10,6 @@ export default function DateComponent({ type }: DateProps) {
 
   return (
     <section className={style.Wrapper}>
-      <h1>Todo List</h1>
       <div className={style.Content}>
         {type === "list" && (
           <Link href={"/"}>
